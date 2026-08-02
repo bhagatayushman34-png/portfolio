@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Syne+Mono&display=swap"
+    rel="stylesheet" />
+  <style>
+    /* =========================
+   Responsive Portfolio CSS
+========================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: rgb(5, 5, 107);
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      width: 100%;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+
+    header {
+      background-color: rgb(7, 7, 249);
+      min-height: 90px;
+      border: 2px solid black;
+      width: 100%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 5%;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      font-size: clamp(24px, 3vw, 35px);
+      font-weight: bold;
+    }
+
+    a {
+      color: azure;
+      text-decoration: none;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav ul li {
+      list-style: none;
+      font-size: clamp(16px, 2vw, 20px);
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    nav ul li:hover {
+      color: red;
+      transform: scale(1.08);
+    }
+
+    hr {
+      height: 2px;
+      color: #8babe9;
+      margin: 40px 80px
+    }
+
+    /* First Section */
+
+    .fristsection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      max-width: 1200px;
+      margin: 50px auto;
+      gap: 40px;
+    }
+
+    .udhar {
+      flex: 1;
+      font-size: clamp(2rem, 5vw, 4rem);
+    }
+
+    .lt,
+    #element {
+      color: goldenrod;
+    }
+
+    .idhar {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .idhar img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+
+    /* Second Section */
+
+    .secondsection {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      height: 80vh;
+    }
+
+    .secondsection span{
+      font-size: 1.9rem;
+    }
+
+    .img-bb {
+      margin-left: 500px;
+      width: 433px;
+      margin-top: -486px;
+      margin-bottom: 57px;
+    }
+
+    .verticletext {
+      margin-left: 487px;
+      margin-top: -698px;
+      width: 462.25px;
+      font-size: 5rem;
+      color: rgb(251, 213, 1);
+    }
+
+
+
+
+
+
+
+
+    /* =========================
+      Tablet
+========================= */
+
+    @media (max-width:992px) {
+
+      .fristsection {
+        gap: 25px;
+      }
+
+      .udhar {
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+    }
+
+    /* =========================
+      Mobile
+========================= */
+
+    @media (max-width:768px) {
+
+      nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+
+      .fristsection {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 30px auto;
+      }
+
+      .udhar {
+        width: 100%;
+        font-size: 2rem;
+      }
+
+      .idhar {
+        width: 100%;
+      }
+
+      .idhar img {
+        max-width: 320px;
+      }
+
+      header {
+        min-height: auto;
+        padding: 15px 0;
+      }
+    }
+
+    /* =========================
+      Small Phones
+========================= */
+
+    @media (max-width:480px) {
+
+      .left {
+        font-size: 24px;
+      }
+
+      nav ul {
+        gap: 12px;
+      }
+
+      nav ul li {
+        font-size: 15px;
+      }
+
+      .udhar {
+        font-size: 1.7rem;
+      }
+
+      .idhar img {
+        max-width: 260px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Ayushman Portfolio</div>
+      <div class="right">
+        <ul>
+          <a href="home.html">
+            <li>Home</li>
+          </a>
+          <a href="about.html">
+            <li>About</li>
+          </a>
+          <a href="contact.html">
+            <li>Contact</li>
+          </a>
+          <a href="projet.html">
+            <li>Project</li>
+          </a>
+        </ul>
+    </nav>
+    </div>
+  </header>
+  <main>
+    <section class="fristsection">
+      <div class="udhar">
+        Hi, my name is <span class="lt">Ayushman </span>
+        <div> and I am a passionate </div>
+        <span id="element"></span>
+      </div>
+      <div class="idhar">
+        <img src="java.png" alt="">
+      </div>
+    </section>
+    <hr>
+    <section class="secondsection">
+      <span>What i have done so far :</span>
+
+      <div class="neeche">
+        <div class="verctile">
+          <img class="img-top" src="web.png" alt="">
+          <img class="img-bb" src="html2.png" alt="">
+          <div class="verticletext"> Full Stack Developer </div>
+        </div>
+
+      </div>
+
+
+    </section>
+  </main>
+  <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web developer .', 'Editor .', 'Web designer .'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
