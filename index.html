@@ -11,231 +11,322 @@
     href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Syne+Mono&display=swap"
     rel="stylesheet" />
   <style>
-    /* =========================
+/* =========================
    Responsive Portfolio CSS
 ========================= */
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color:rgb(5,5,107);
+    color:white;
+    font-family:Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
+    width:100%;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* =========================
+   Header
+========================= */
+
+header{
+    background-color:rgb(7,7,249);
+    min-height:90px;
+    border:2px solid black;
+    width:100%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 5%;
+    flex-wrap:wrap;
+}
+
+.left{
+    font-size:clamp(24px,3vw,35px);
+    font-weight:bold;
+}
+
+a{
+    color:azure;
+    text-decoration:none;
+}
+
+nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+nav ul li{
+    list-style:none;
+    font-size:clamp(16px,2vw,20px);
+    cursor:pointer;
+    transition:.3s;
+}
+
+nav ul li:hover{
+    color:red;
+    transform:scale(1.08);
+}
+
+hr{
+    height:2px;
+    color:#8babe9;
+    margin:40px 80px;
+}
+
+/* =========================
+   First Section
+========================= */
+
+.fristsection{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+    gap:40px;
+}
+
+.udhar{
+    flex:1;
+    font-size:clamp(2rem,5vw,4rem);
+}
+
+.lt,
+#element{
+    color:goldenrod;
+}
+
+.idhar{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.idhar img{
+    width:100%;
+    max-width:600px;
+    height:auto;
+}
+
+/* =========================
+   Second Section
+========================= */
+
+.secondsection{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    height:auto;
+    min-height:auto;
+    padding:30px 0;
+}
+
+.secondsection span{
+    font-size:1.9rem;
+}
+
+/* Responsive Image */
+
+.img-bb{
+    display:block;
+    width:100%;
+    max-width:420px;
+    margin:30px auto;
+}
+
+/* Responsive Text */
+
+.verticletext{
+    width:100%;
+    max-width:500px;
+    margin:20px auto;
+    text-align:center;
+    font-size:clamp(2rem,5vw,5rem);
+    color:rgb(251,213,1);
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer{
+    background:#000;
+    width:100%;
+    min-height:70px;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width:992px){
+
+    .fristsection{
+        gap:25px;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background-color: rgb(5, 5, 107);
-      color: white;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      width: 100%;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-
-    /* Header */
-
-    header {
-      background-color: rgb(7, 7, 249);
-      min-height: 90px;
-      border: 2px solid black;
-      width: 100%;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 5%;
-      flex-wrap: wrap;
-    }
-
-    .left {
-      font-size: clamp(24px, 3vw, 35px);
-      font-weight: bold;
-    }
-
-    a {
-      color: azure;
-      text-decoration: none;
-    }
-
-    nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    nav ul li {
-      list-style: none;
-      font-size: clamp(16px, 2vw, 20px);
-      cursor: pointer;
-      transition: .3s;
-    }
-
-    nav ul li:hover {
-      color: red;
-      transform: scale(1.08);
-    }
-
-    hr {
-      height: 2px;
-      color: #8babe9;
-      margin: 40px 80px
-    }
-
-    /* First Section */
-
-    .fristsection {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 90%;
-      max-width: 1200px;
-      margin: 50px auto;
-      gap: 40px;
-    }
-
-    .udhar {
-      flex: 1;
-      font-size: clamp(2rem, 5vw, 4rem);
-    }
-
-    .lt,
-    #element {
-      color: goldenrod;
-    }
-
-    .idhar {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-    }
-
-    .idhar img {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-    }
-
-    /* Second Section */
-
-    .secondsection {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
-      height: 80vh;
+    .udhar{
+        font-size:clamp(2rem,4vw,3rem);
     }
 
     .secondsection span{
-      font-size: 1.9rem;
+        font-size:1.6rem;
     }
 
-    .img-bb {
-      margin-left: 500px;
-      width: 433px;
-      margin-top: -486px;
-      margin-bottom: 57px;
+    .img-bb{
+        max-width:340px;
     }
 
-    .verticletext {
-      margin-left: 487px;
-      margin-top: -698px;
-      width: 462.25px;
-      font-size: 5rem;
-      color: rgb(251, 213, 1);
+    .verticletext{
+        font-size:2.5rem;
     }
 
+    hr{
+        margin:35px 40px;
+    }
+}
 
-
-
-
-
-
-
-    /* =========================
-      Tablet
+/* =========================
+   Mobile
 ========================= */
 
-    @media (max-width:992px) {
+@media (max-width:768px){
 
-      .fristsection {
-        gap: 25px;
-      }
-
-      .udhar {
-        font-size: clamp(2rem, 4vw, 3rem);
-      }
+    nav{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
     }
 
-    /* =========================
-      Mobile
+    nav ul{
+        justify-content:center;
+    }
+
+    .fristsection{
+        flex-direction:column-reverse;
+        text-align:center;
+        margin:30px auto;
+        gap:25px;
+    }
+
+    .udhar{
+        width:100%;
+        font-size:2rem;
+    }
+
+    .idhar{
+        width:100%;
+    }
+
+    .idhar img{
+        max-width:320px;
+    }
+
+    header{
+        min-height:auto;
+        padding:15px 0;
+    }
+
+    .secondsection{
+        height:auto;
+        padding:20px 0;
+    }
+
+    .secondsection span{
+        font-size:1.3rem;
+    }
+
+    .img-bb{
+        width:90%;
+        max-width:280px;
+        margin:25px auto;
+    }
+
+    .verticletext{
+        width:100%;
+        margin:20px auto;
+        font-size:2rem;
+        text-align:center;
+    }
+
+    hr{
+        margin:25px 15px;
+    }
+
+    footer{
+        min-height:60px;
+        padding:15px;
+    }
+}
+
+/* =========================
+   Small Phones
 ========================= */
 
-    @media (max-width:768px) {
+@media (max-width:480px){
 
-      nav {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-      }
-
-      nav ul {
-        justify-content: center;
-      }
-
-      .fristsection {
-        flex-direction: column-reverse;
-        text-align: center;
-        margin: 30px auto;
-      }
-
-      .udhar {
-        width: 100%;
-        font-size: 2rem;
-      }
-
-      .idhar {
-        width: 100%;
-      }
-
-      .idhar img {
-        max-width: 320px;
-      }
-
-      header {
-        min-height: auto;
-        padding: 15px 0;
-      }
+    .left{
+        font-size:24px;
     }
 
-    /* =========================
-      Small Phones
-========================= */
-
-    @media (max-width:480px) {
-
-      .left {
-        font-size: 24px;
-      }
-
-      nav ul {
-        gap: 12px;
-      }
-
-      nav ul li {
-        font-size: 15px;
-      }
-
-      .udhar {
-        font-size: 1.7rem;
-      }
-
-      .idhar img {
-        max-width: 260px;
-      }
+    nav ul{
+        gap:12px;
     }
+
+    nav ul li{
+        font-size:15px;
+    }
+
+    .udhar{
+        font-size:1.7rem;
+    }
+
+    .idhar img{
+        max-width:260px;
+    }
+
+    .secondsection{
+        padding:15px 0;
+    }
+
+    .img-bb{
+        max-width:220px;
+    }
+
+    .verticletext{
+        font-size:1.6rem;
+    }
+
+    hr{
+        margin:20px 10px;
+    }
+
+    footer{
+        min-height:55px;
+        font-size:14px;
+        padding:12px;
+    }
+}
   </style>
 </head>
 
