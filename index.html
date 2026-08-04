@@ -2,393 +2,443 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Syne+Mono&display=swap"
-    rel="stylesheet" />
-  <style>
-/* =========================
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Syne+Mono&display=swap"
+        rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* =========================
    Responsive Portfolio CSS
 ========================= */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-html{
-    scroll-behavior:smooth;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-body{
-    background-color:rgb(5,5,107);
-    color:white;
-    font-family:Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
-    width:100%;
-    min-height:100vh;
-    overflow-x:hidden;
-}
+        body {
+            background-color: rgb(5, 5, 107);
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 100%;
+            min-height: 100%;
+            overflow-x: hidden;
+        }
 
-/* =========================
+        /* =========================
    Header
 ========================= */
 
-header{
-    background-color:rgb(7,7,249);
-    min-height:90px;
-    border:2px solid black;
-    width:100%;
-}
+        header {
+            background-color: rgb(7, 7, 249);
+            min-height: 90px;
+            border: 2px solid black;
+            width: 100%;
+        }
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 5%;
-    flex-wrap:wrap;
-}
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            flex-wrap: wrap;
+        }
 
-.left{
-    font-size:clamp(24px,3vw,35px);
-    font-weight:bold;
-}
+        .left {
+            font-size: clamp(24px, 3vw, 35px);
+            font-weight: bold;
+        }
 
-a{
-    color:azure;
-    text-decoration:none;
-}
+        a {
+            color: azure;
+            text-decoration: none;
+        }
 
-nav ul{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-}
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-nav ul li{
-    list-style:none;
-    font-size:clamp(16px,2vw,20px);
-    cursor:pointer;
-    transition:.3s;
-}
+        nav ul li {
+            list-style: none;
+            font-size: clamp(16px, 2vw, 20px);
+            cursor: pointer;
+            transition: .3s;
+        }
 
-nav ul li:hover{
-    color:red;
-    transform:scale(1.08);
-}
+        nav ul li:hover {
+            color: red;
+            transform: scale(1.08);
+        }
 
-hr{
-    height:2px;
-    color:#8babe9;
-    margin:40px 80px;
-}
+        hr {
+            height: 2px;
+            color: #8babe9;
+            margin: 40px 80px;
+        }
 
-/* =========================
+        /* =========================
    First Section
 ========================= */
 
-.fristsection{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    width:90%;
-    max-width:1200px;
-    margin:50px auto;
-    gap:40px;
+        .fristsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            gap: 40px;
+        }
+
+        .udhar {
+            flex: 1;
+            font-size: clamp(2rem, 5vw, 4rem);
+        }
+
+        .lt,
+        #element {
+            color: goldenrod;
+        }
+
+        .idhar {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .idhar img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+.about .content{
+        max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 1.9 ;
 }
 
-.udhar{
-    flex:1;
-    font-size:clamp(2rem,5vw,4rem);
-}
 
-.lt,
-#element{
-    color:goldenrod;
-}
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0rem;
+            margin-inline-end: 0rem;
+            unicode-bidi: isolate;
+                margin-bottom: 1.5rem;
+        }
 
-.idhar{
-    flex:1;
-    display:flex;
-    justify-content:center;
-}
-
-.idhar img{
-    width:100%;
-    max-width:600px;
-    height:auto;
-}
-
-/* =========================
+        /* =========================
    Second Section
 ========================= */
 
-.secondsection{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    height:auto;
-    min-height:auto;
-    padding:30px 0;
-}
+        .secondsection {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            height: auto;
+            min-height: auto;
+            padding: 30px 0;
+        }
 
-.secondsection span{
-    font-size:1.9rem;
-}
+        .secondsection span {
+            font-size: 1.9rem;
+        }
 
-/* Responsive Image */
+        /* Responsive Image */
 
-.img-bb{
-    display:block;
-    width:100%;
-    max-width:420px;
-    margin:30px auto;
-}
+        .img-bb {
+margin-left: 30vw;
+  width: 19rem;
+  margin-bottom: 145px;
+  margin-top: -64vh;
+  width: 30vw;
+  height: auto;
+        }
 
-/* Responsive Text */
+        /* Responsive Text */
 
-.verticletext{
-    width:100%;
-    max-width:500px;
-    margin:20px auto;
-    text-align:center;
-    font-size:clamp(2rem,5vw,5rem);
-    color:rgb(251,213,1);
-}
+        .verticletext {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+            text-align: center;
+            font-size: clamp(2rem, 5vw, 5rem);
+            color: rgb(251, 213, 1);
+        }
 
-/* =========================
+        /* =========================
    Footer
 ========================= */
 
-footer{
-    background:#000;
-    width:100%;
-    min-height:67px;
-    padding:20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
+        footer {
+            background: #000;
+            width: 100%;
+            min-height: 67px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-/* =========================
+        /* =========================
    Tablet
 ========================= */
 
-@media (max-width:992px){
+        @media (max-width:992px) {
 
-    .fristsection{
-        gap:25px;
-    }
+            .fristsection {
+                gap: 25px;
+            }
 
-    .udhar{
-        font-size:clamp(2rem,4vw,3rem);
-    }
+            .udhar {
+                font-size: clamp(2rem, 4vw, 3rem);
+            }
 
-    .secondsection span{
-        font-size:1.6rem;
-    }
+            .secondsection span {
+                font-size: 1.6rem;
+            }
 
-    .img-bb{
-        max-width:340px;
-    }
+            .img-bb {
+                max-width: 340px;
+            }
 
-    .verticletext{
-        font-size:2.5rem;
-    }
+            .verticletext {
+                font-size: 2.5rem;
+            }
 
-    hr{
-        margin:35px 40px;
-    }
-}
+            hr {
+                margin: 35px 40px;
+            }
+        }
 
-/* =========================
+        /* =========================
    Mobile
 ========================= */
 
-@media (max-width:768px){
+        @media (max-width:768px) {
 
-    nav{
-        flex-direction:column;
-        text-align:center;
-        gap:15px;
-    }
+            nav {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
 
-    nav ul{
-        justify-content:center;
-    }
+            nav ul {
+                justify-content: center;
+            }
 
-    .fristsection{
-        flex-direction:column-reverse;
-        text-align:center;
-        margin:30px auto;
-        gap:25px;
-    }
+            .fristsection {
+                flex-direction: column-reverse;
+                text-align: center;
+                margin: 30px auto;
+                gap: 25px;
+            }
 
-    .udhar{
-        width:100%;
-        font-size:2rem;
-    }
+            .udhar {
+                width: 100%;
+                font-size: 2rem;
+            }
 
-    .idhar{
-        width:100%;
-    }
+            .idhar {
+                width: 100%;
+            }
 
-    .idhar img{
-        max-width:320px;
-    }
+            .idhar img {
+                max-width: 320px;
+            }
 
-    header{
-        min-height:auto;
-        padding:15px 0;
-    }
+            header {
+                min-height: auto;
+                padding: 15px 0;
+            }
+            .about .content{
+                display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0rem;
+  margin-inline-end: 0rem;
+  unicode-bidi: isolate;
+  margin-bottom: 1.5rem
+            }
 
-    .secondsection{
-        height:auto;
-        padding:20px 0;
-    }
+            .secondsection {
+                height: auto;
+                padding: 20px 0;
+            }
 
-    .secondsection span{
-        font-size:1.3rem;
-    }
+            .secondsection span {
+                font-size: 1.3rem;
+            }
 
-    .img-bb{
-        width:90%;
-        max-width:280px;
-        margin:25px auto;
-    }
+            .img-bb {
+                width: 90%;
+                max-width: 280px;
+                margin: 25px auto;
+            }
 
-    .verticletext{
-        width:100%;
-        margin:20px auto;
-        font-size:2rem;
-        text-align:center;
-    }
+            .verticletext {
+                width: 100%;
+                margin: 20px auto;
+                font-size: 2rem;
+                text-align: center;
+            }
 
-    hr{
-        margin:25px 15px;
-    }
+            hr {
+                margin: 25px 15px;
+            }
 
-    footer{
-        min-height:56px;
-        padding:15px;
-    }
-}
+            footer {
+                min-height: 56px;
+                padding: 15px;
+            }
+        }
 
-/* =========================
+        /* =========================
    Small Phones
 ========================= */
 
-@media (max-width:480px){
+        @media (max-width:480px) {
 
-    .left{
-        font-size:24px;
-    }
+            .left {
+                font-size: 24px;
+            }
 
-    nav ul{
-        gap:12px;
-    }
+            nav ul {
+                gap: 12px;
+            }
 
-    nav ul li{
-        font-size:15px;
-    }
+            nav ul li {
+                font-size: 15px;
+            }
 
-    .udhar{
-        font-size:1.7rem;
-    }
+            .udhar {
+                font-size: 1.7rem;
+            }
 
-    .idhar img{
-        max-width:260px;
-    }
+            .idhar img {
+                max-width: 260px;
+            }
 
-    .secondsection{
-        padding:15px 0;
-    }
+            .secondsection {
+                padding: 15px 0;
+            }
 
-    .img-bb{
-        max-width:220px;
-    }
+            .img-bb {
+                max-width: 220px;
+            }
 
-    .verticletext{
-        font-size:1.6rem;
-    }
+            .verticletext {
+                font-size: 1.6rem;
+            }
 
-    hr{
-        margin:20px 10px;
-    }
+            hr {
+                margin: 20px 10px;
+            }
 
-    footer{
-        min-height: 50px;
-        font-size:14px;
-        padding:12px;
-    }
-}
-  </style>
+            footer {
+                min-height: 50px;
+                font-size: 14px;
+                padding: 12px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="left">Ayushman Portfolio</div>
-      <div class="right">
-        <ul>
-          <a href="home.html">
-            <li>Home</li>
-          </a>
-          <a href="about.html">
-            <li>About</li>
-          </a>
-          <a href="contact.html">
-            <li>Contact</li>
-          </a>
-          <a href="projet.html">
-            <li>Project</li>
-          </a>
-        </ul>
-    </nav>
-    </div>
-  </header>
-  <main>
-    <section class="fristsection">
-      <div class="udhar">
-        Hi, my name is <span class="lt">Ayushman </span>
-        <div> and I am a passionate </div>
-        <span id="element"></span>
-      </div>
-      <div class="idhar">
-        <img src="java.png" alt="">
-      </div>
-    </section>
-    <hr>
-    <section class="secondsection">
-      <span>What i have done so far :</span>
-
-      <div class="neeche">
-        <div class="verctile">
-          <img class="img-top" src="web.png" alt="">
-          <img class="img-bb" src="html2.png" alt="">
-          <div class="verticletext"> Full Stack Developer </div>
+    <header>
+        <nav>
+            <div class="left">Ayushman Portfolio</div>
+            <div class="right">
+                <ul>
+                    <a href="home.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="about.html">
+                        <li>About</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                    <a href="projet.html">
+                        <li>Project</li>
+                    </a>
+                </ul>
+        </nav>
         </div>
-       </div>
-</section>
+    </header>
+    <main>
+        <section class="fristsection">
+            <div class="udhar">
+                Hi, my name is <span class="lt">Ayushman </span>
+                <div> and I am a passionate </div>
+                <span id="element"></span>
+            </div>
+            <div class="idhar">
+                <img src="java.png" alt="">
 
-  </main>
-  <footer>
- © 2024 Ayushman. All rights reserved. Crafted with passion and innovation. 
-</footer>
-  <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
-  <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Web developer .', 'Editor .', 'Web designer .'],
-      typeSpeed: 50,
-    });
-  </script>
-  
+            </div>
+
+        </section>
+        <hr>
+        <section class="about">
+            <div class="content">
+                <p>I'm a passionate tech enthusiast deeply committed to solving complex problems and building innovative
+                    AI solutions. My journey in technology has led me to create projects like BERU—a cinematic AI
+                    assistant concept that pushes the boundaries of what's possible.
+
+                    Beyond development, I have a strong passion for Linux distributions (Kali, Parrot, Garuda) and
+                    cybersecurity. I believe in continuous learning and applying technical knowledge to create
+                    meaningful solutions that make a real-world impact. My science background provides a strong
+                    foundation for analytical thinking and problem-solving.</p>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="secondsection">
+                <div class="neeche">
+                     <div class="verticletext"> Full Stack Developer </div>
+                <div class="verctile">
+                    <img class="img-top" src="web.png" alt="">
+                    <img class="img-bb" src="html2.png" alt="">
+                  
+                </div>
+                 
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        © 2024 Ayushman. All rights reserved. Crafted with passion and innovation.
+    </footer>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer .', 'Editor .', 'Web designer .'],
+            typeSpeed: 50,
+        });
+    </script>
+
 </body>
 
 </html>
