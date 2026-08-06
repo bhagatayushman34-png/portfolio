@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Syne+Mono&display=swap"
         rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         /* =========================
    Responsive Portfolio CSS
@@ -88,6 +88,13 @@
             margin: 40px 80px;
         }
 
+        section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
         /* =========================
    First Section
 ========================= */
@@ -123,12 +130,13 @@
             max-width: 600px;
             height: auto;
         }
-.about .content{
-        max-width: 900px;
-    margin: 0 auto;
-    font-size: 1.4rem;
-    line-height: 1.9 ;
-}
+
+        .about .content {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.4rem;
+            line-height: 1.9;
+        }
 
 
         p {
@@ -138,7 +146,7 @@
             margin-inline-start: 0rem;
             margin-inline-end: 0rem;
             unicode-bidi: isolate;
-                margin-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
         }
 
         /* =========================
@@ -158,15 +166,248 @@
             font-size: 1.9rem;
         }
 
+        h2 {
+            font-size: 2.8rem;
+            margin-bottom: 3.5rem;
+            text-align: center;
+            color: antiquewhite;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #d8334c;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery-item {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-content {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            aspect-ratio: 3 / 4;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+
+        }
+
+        .skill-card {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(200, 27, 27, 0.08);
+            transition: all 0.3s;
+            animation: fadeInUp 0.6s ease-out forwards;
+            opacity: 2rem;
+
+        }
+
+        .skill-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            color: gold;
+            font-weight: 600;
+        }
+
+        section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .skill-card ul {
+            list-style: none;
+
+        }
+
+        .skill-card li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #cc0f0f;
+            font-size: 1.2rem;
+        }
+
+        .skill-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .skill-card:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        @media (prefers-color-scheme: dark) {
+
+            .skill-card,
+            .project-card,
+            .education-item,
+            .contact-item {
+                background: #3c2193;
+                border-color: rgba(36, 13, 120, 0.1);
+            }
+        }
+
+        .skill-card li {
+            padding: 0.6rem 0;
+            color: #d7d0f6;
+            padding-left: 1.8rem;
+            position: relative;
+            font-weight: 500;
+
+        }
+        @media (prefers-color-scheme: dark) {
+    .about-content, .section-subtitle, .hero-content .sub-headline, .hero-content .description, .skill-card, .project-card, .education-item, .contact-item {
+        color: #b3b3b3;
+    }
+}
+h3{
+    color: gold;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+.project-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.project-card {
+    background: #165b9f;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+.project-image {
+    height: 220px;
+    background: linear-gradient(135deg, #9d247f 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    font-size: 3.5rem;
+}
+.project-content {
+    padding: 2.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+.tag {
+    background: #667eea;
+    color: white;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.education-item h3 {
+    font-size: 1.3rem;
+    color: #667eea;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+.education-item p {
+    color: gold;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.education {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.education-item {
+    background: #2d2b9f;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    border-left: 5px solid #667eea;
+    transition: all 0.3s;
+   
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+.education-item h3 {
+    font-size: 1.3rem;
+    color: goldenrod;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+.education-item p {
+    color:antiquewhite;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.contact {
+    text-align: center;
+}
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.contact-item {
+    background: #4a1b91;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: all 0.5s;
+   
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+.contact-item a {
+    color: #666;
+    text-decoration: none;
+    word-break: break-all;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
         /* Responsive Image */
 
         .img-bb {
-margin-left: 30vw;
-  width: 19rem;
-  margin-bottom: 145px;
-  margin-top: -64vh;
-  width: 30vw;
-  height: auto;
+            margin-left: 30vw;
+            width: 19rem;
+            margin-bottom: 145px;
+            margin-top: -64vh;
+            width: 30vw;
+            height: auto;
         }
 
         /* Responsive Text */
@@ -194,6 +435,38 @@ margin-left: 30vw;
             align-items: center;
             text-align: center;
         }
+
+        script {
+            display: none;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: #667eea;
+            box-shadow: 0 20px 45px rgba(102, 126, 234, 0.2);
+        }
+         .skill-card:nth-child(1) { animation-delay: 0.1s; }
+        .skill-card:nth-child(2) { animation-delay: 0.2s; }
+        .skill-card:nth-child(3) { animation-delay: 0.3s; }
+        .skill-card:nth-child(4) { animation-delay: 0.4s; }
+        .skill-card:hover {
+            transform: translateY(-8px);
+            border-color: #667eea;
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.15);
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .gallery-item:nth-child(1) { animation-delay: 0.1s; }
+        .gallery-item:nth-child(2) { animation-delay: 0.2s; }
+        .gallery-item:nth-child(3) { animation-delay: 0.3s; }
+        .gallery-item:nth-child(4) { animation-delay: 0.4s; }
 
         /* =========================
    Tablet
@@ -266,14 +539,15 @@ margin-left: 30vw;
                 min-height: auto;
                 padding: 15px 0;
             }
-            .about .content{
+
+            .about .content {
                 display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0rem;
-  margin-inline-end: 0rem;
-  unicode-bidi: isolate;
-  margin-bottom: 1.5rem
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0rem;
+                margin-inline-end: 0rem;
+                unicode-bidi: isolate;
+                margin-bottom: 1.5rem
             }
 
             .secondsection {
@@ -368,7 +642,7 @@ margin-left: 30vw;
                     <a href="home.html">
                         <li>Home</li>
                     </a>
-                    <a href="about.html">
+                    <a href="#about">
                         <li>About</li>
                     </a>
                     <a href="contact.html">
@@ -407,24 +681,101 @@ margin-left: 30vw;
                     foundation for analytical thinking and problem-solving.</p>
             </div>
         </section>
-
-
-
-
-
-
-
-        <section class="secondsection">
-                <div class="neeche">
-                     <div class="verticletext"> Full Stack Developer </div>
-                <div class="verctile">
-                    <img class="img-top" src="web.png" alt="">
-                    <img class="img-bb" src="html2.png" alt="">
-                  
-                </div>
-                 
+        <section id="gallery">
+            <h2> Gallery </h2>
+            <p class="section-subtitle">
+                A glimpse into my professional journey and moments of inspiration </p>
+            <div class="gallery-item">
+                <div class="gallery-content"> <img src="me1.jpeg" alt=""></div>
+                <div class="gallery-content"> <img src="me2.jpeg" alt=""></div>
+                <div class="gallery-content"> <img src="me3.jpeg" alt=""></div>
+            </div>
+            <div class="photos">
             </div>
         </section>
+        <section class="skill">
+            <h2>Skills & Expertise</h2>
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <h3>💻 Development</h3>
+                    <ul>
+                        <li>
+
+                            Python</li>
+                        <li> JavaScript</li>
+                        <li>Full-stack Development</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>📚 Concepts</h3>
+                    <ul>
+                        <li>Physics Fundamentals</li>
+                        <li>Chemistry Fundamentals</li>
+                        <li>Analytical Thinking</li>
+                        <li>Problem Solving</li>
+                </div>
+            </div>
+            <section id="project">
+                <h2>Featured Projects</h2>
+                <p class="section-subtitle">Innovative solutions that showcase my technical expertise and creativity</p>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">🤖</div>
+                        <div class="project-content">
+                            <h3>BERU AI Assistant</h3>
+                            <p>A cinematic AI assistant concept designed to blend cutting-edge technology with intuitive
+                                user experience. BERU represents innovation in conversational AI and interactive
+                                interfaces.</p>
+                            <div class="project-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Innovation</span>
+                            </div>
+
+                        </div>
+                    </div>
+                 </section>
+
+<section id="education">
+        <h2>Education &amp; Certifications</h2>
+        
+            <div class="education-item">
+                <h3>📖 Academic Background</h3>
+                <p>Science-focused academic foundation providing strong analytical and problem-solving capabilities with emphasis on technology and innovation.</p>
+            </div>
+        </div>
+    </section>
+<section id="contact" class="contact">
+        <h2>Let's Connect</h2>
+        <p class="section-subtitle">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>📧 Email</h3>
+                <a href="ayushman0225@gmail.com">ayushman0225@gmail.com</a>
+            </div>
+           
+            <div class="contact-item">
+                <h3>🔗 GitHub</h3>
+                <a href="https://github.com/bhagatayushman34-png" target="_blank">bhagatayushman34-png</a>
+            </div>
+        </div>
+    </section>
+
+       
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </main>
     <footer>
@@ -437,8 +788,21 @@ margin-left: 30vw;
             strings: ['Web developer .', 'Editor .', 'Web designer .'],
             typeSpeed: 50,
         });
-    </script>
 
+
+    </script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
